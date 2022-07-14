@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-buttons{
+    display: flex;
+}
+.box .heading .heading-buttons button{
+    width: 194px;
+    height: 53px;
+    font-size: 27px;
+    font-weight: bolder;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer
+}
+
+.box {
+    height: 550px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.login-inputs {
+    row-gap: 47px;
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+}
+.login-inputs input {
+    border: 2px solid lightgrey;
+    width: 269px;
+    margin-left: 65px;
+    height: 36px;
+    transition: border 0.5s;
+    outline: none;
+}
+
+input:placeholder-shown {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login input:focus {
+    border: 2px solid purple;
+}
+
+.login p {
+    margin-left: 65px;
+    margin-top: 12px;
+    font-size: 23px;
+    font-weight: 200;
+    color: rgb(145, 26, 145);
+}
+
+.login .last-button button {
+    height: 40px;
+    background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+    margin-left: 65px;
+    width: 274px;
+    color: aliceblue;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 25px;
+}
+
+.login .last-button button:hover {
+    cursor: pointer;
+    background: linear-gradient(-220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+}
+
+.login .last-button p {
+    color: black;
+}
+
+.login .last-button p span {
+    color: rgb(145, 26, 145);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.box .heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .heading button {
+    width: 199px;
+    height: 53px;
+    font-size: 27px;
+    font-weight: bolder;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.signup .main-button button {
+    background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    color: rgb(253, 253, 253);
+}
+
+.signup .main-button button:hover {
+    background: linear-gradient(-220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+}
+
+.signup-inputs {
+    row-gap: 10px;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-inputs input {
+    border: 2px solid lightgrey;
+    width: 269px;
+    margin-left: 65px;
+    height: 36px;
+    transition: border 0.5s;
+    outline: none;
+}
+
+.signup input:placeholder-shown {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signup input:focus {
+    border: 2px solid purple;
+}
+.signup .last-button button {
+    height: 40px;
+    background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+    margin-left: 65px;
+    width: 274px;
+    color: aliceblue;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.signup .last-button button:hover {
+    cursor: pointer;
+    background: linear-gradient(-220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+}
+#log-error{
+    background-color: #cf4a4a;
+    margin-left: 52px;
+    width: 271px;
+    height: 50px;
+    position: relative;
+    top: 38px;
+    left: 13px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-inputs span{
+    color: red;
+    margin-left: 65px;
+    font-weight: bolder;
+}
+
+@media screen and (min-width:350px) and (max-width:700px){
+    .box .heading .heading-buttons button{
+        width: 165px;
+        height: 53px;
+        font-size: 27px;
+        font-weight: bolder;
+        margin-top: 5px;
+        margin-left: 4px;
+        margin-right: 3px;
+        cursor: pointer
+    }
+    .box {
+        height: 550px;
+        width: 349px;
+        background-color: white;
+        border-radius: 10px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    .login-inputs input {
+        border: 2px solid lightgrey;
+        width: 269px;
+        margin-left: 50px;
+        height: 36px;
+        transition: border 0.5s;
+        outline: none;
+    }
+    .login p {
+        margin-left: 50px;
+        margin-top: 15px;
+        font-size: 23px;
+        font-weight: 200;
+        color: rgb(145, 26, 145);
+    }
+    .login .last-button button {
+        height: 40px;
+        background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+        margin-left: 50px;
+        width: 274px;
+        color: aliceblue;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid lightgray;
+        font-size: 25px;
+    }
+    .signup-inputs input {
+        border: 2px solid lightgrey;
+        width: 259px;
+        margin-left: 50px;
+        height: 36px;
+        transition: border 0.5s;
+        outline: none;
+    }
+    .signup .last-button button {
+        height: 40px;
+        background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+        margin-left: 50px;
+        width: 264px;
+        color: aliceblue;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid lightgray;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    
+}
+@media screen and (max-width:300px){
+    .box .heading .heading-buttons button{
+        width: 124px;
+        height: 53px;
+        font-size: 27px;
+        font-weight: bolder;
+        margin-top: 5px;
+        margin-left: 4px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+    .box {
+        height: 550px;
+        width: 263px;
+        background-color: white;
+        border-radius: 10px;
+        margin-right: 0px;
+    }
+    .login-inputs input {
+        border: 5px solid lightgrey;
+        width: 225px;
+        margin-left: 16px;
+        height: 36px;
+        transition: border 0.5s;
+        outline: none;
+    }
+    .login input:focus {
+        border: 5px solid purple;
+    }
+    .login .last-button button {
+        height: 40px;
+        background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+        margin-left: 17px;
+        width: 234px;
+        color: aliceblue;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid lightgray;
+        font-size: 25px;
+    }
+    .login p {
+        margin-left: 18px;
+        margin-top: 12px;
+        font-size: 23px;
+        font-weight: 200;
+        color: rgb(145, 26, 145);
+    }
+    #log-error{
+        background-color: #cf4a4a;
+        margin-left: 12px;
+        width: 235px;
+        height: 50px;
+        position: relative;
+        top: 38px;
+        left: 13px;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signup-inputs input {
+        border: 2px solid lightgrey;
+        width: 229px;
+        margin-left: 15px;
+        height: 36px;
+        transition: border 0.5s;
+        outline: none;
+    }
+    .signup .last-button button {
+        height: 40px;
+        background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+        margin-left: 15px;
+        width: 234px;
+        color: aliceblue;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid lightgray;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .signup-inputs span {
+        color: red;
+        margin-left: 15px;
+        font-weight: bolder;
+    }
+    
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+    .box .heading .heading-buttons button{
+        width: 280px;
+        height: 53px;
+        font-size: 40px;
+        font-weight: bolder;
+        margin-top: 5px;
+        margin-left: 4px;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+    .box {
+        height: 550px;
+        width: 579px;
+        background-color: white;
+        border-radius: 10px;
+        margin-right: 8px;
+    }
+    .login-inputs {
+        row-gap: 47px;
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+    }
+    .login-inputs input {
+        border: 5px solid lightgrey;
+        width: 469px;
+        margin-left: 65px;
+        height: 36px;
+        transition: border 0.5s;
+        outline: none;
+    }
+    .login input:focus {
+        border: 5px solid purple;
+    }
+    .login .last-button button {
+        height: 40px;
+        background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+        margin-left: 65px;
+        width: 480px;
+        color: aliceblue;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid lightgray;
+        font-size: 32px;
+    }
+    .signup-inputs input {
+        border: 2px solid lightgrey;
+        width: 490px;
+        margin-left: 65px;
+        height: 36px;
+        transition: border 0.5s;
+        outline: none;
+    }
+    .signup .last-button button {
+        height: 45px;
+        background: linear-gradient(220deg, rgba(247, 31, 31, 0.815), rgba(252, 12, 252, 0.815));
+        margin-left: 65px;
+        width: 490px;
+        color: aliceblue;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid lightgray;
+        font-size: 36px;
+        margin-top: 15px;
+        
+        
+    }
+}
+
+

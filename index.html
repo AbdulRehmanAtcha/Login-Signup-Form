@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="box">
+        <div class="heading">
+            <div class="heading-buttons">
+                <button id="first-butt" onClick="tabChange('1')"
+                    style="border-radius: 5px; border: 1px solid lightgray;">Login</button>
+                <button id="second-butt" onClick="tabChange('2')"
+                    style="border-radius: 5px; border: 1px solid lightgray;">Signup</button>
+            </div>
+        </div>
+
+        <div class="login" id="log">
+            <div id="log-error">
+                <span id="login-Error" style="font-size: 20px;"></span>
+            </div>
+            <div class="login-inputs">
+                <input type="email" placeholder="Email Address" id="log-email">
+                
+                <input type="password" placeholder="Password" id="log-password">
+                
+            </div>
+            <p>Forgot Password?</p>
+            <br>
+            <div class="last-button">
+                <button onClick="loginSubmit()">Login</button>
+                <p>Not a member? <span onClick="tabChange('2')">Signup Now.</span></p>
+            </div>
+        </div>
+        <div class="signup" id="sign">
+
+            <div class="signup-inputs">
+                <input type="text" placeholder="First Name" id="sign-first-name">
+                <span id="sign-first-name-error"></span>
+                <input type="text" placeholder="Last Name" id="sign-second-name">
+                <span id="sign-last-name-error"></span>
+                <input type="email" placeholder="Email" id="sign-email">
+                <span id="sign-email-error"></span>
+                <input type="password" placeholder="Password" id="sign-password">
+                <span id="sign-password-error"></span>
+                <input type="password" placeholder=" Confirm Password" id="sign-confirm-password">
+                <span id="sign-confirm-password-error"></span>
+            </div>
+            <div class="last-button">
+                <button onClick="signSubmit()">Signup</button>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
